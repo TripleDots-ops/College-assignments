@@ -1,0 +1,27 @@
+START
+
+    // Step 1: Define Constants
+    CONSTANT CUBIC_INCHES_PER_CUBIC_FOOT = 1728
+
+    // Step 2: Input
+    PRINT "Enter the refrigerator model name:"
+    INPUT model_name
+
+    PRINT "Enter the interior height in inches:"
+    INPUT height
+
+    PRINT "Enter the interior width in inches:"
+    INPUT width
+
+    PRINT "Enter the interior depth in inches:"
+    INPUT depth
+
+    // Step 3: Process
+    volume_in_cubic_inches = height * width * depth
+    capacity_in_cubic_feet = volume_in_cubic_inches / CUBIC_INCHES_PER_CUBIC_FOOT
+
+    // Step 4: Output
+    PRINT "Refrigerator Model:", model_name
+    PRINT "Capacity in cubic feet:", capacity_in_cubic_feet
+
+END
